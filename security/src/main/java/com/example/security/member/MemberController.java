@@ -6,6 +6,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MemberController {
+
+	
+	@GetMapping("/")
+	public String logined() {
+		
+		return "logined";
+	}
+	
+	
+	
 	
 	@GetMapping("/testing")
 	public String testing() {
